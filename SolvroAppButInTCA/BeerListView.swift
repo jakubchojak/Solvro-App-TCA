@@ -14,18 +14,17 @@ struct BeerListView: View {
     var body: some View {
         WithViewStore(self.store, observe:{ $0 }) { viewStore in
             VStack {
-                Button {
-                    viewStore.send(.initializer)
-                } label: {
-                    Text("Load beers")
-                }
-
                 List {
                     ForEach(viewStore.state.beers, id:\.self) { beer in
                         Text(beer.name)
                     }
                 }
             }
+            .onAppear(
+                perform: {
+                    viewStore.send(.initializer)
+                }
+            )
         }
     }
 }
