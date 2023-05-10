@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		AF6F9DFF2A07B164003CF36A /* SolvroAppButInTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6F9DFE2A07B164003CF36A /* SolvroAppButInTCAApp.swift */; };
-		AF6F9E012A07B164003CF36A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6F9E002A07B164003CF36A /* ContentView.swift */; };
 		AF6F9E032A07B165003CF36A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF6F9E022A07B165003CF36A /* Assets.xcassets */; };
 		AF6F9E062A07B165003CF36A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF6F9E052A07B165003CF36A /* Preview Assets.xcassets */; };
+		AF8ECEB12A0BD3EF00409452 /* BeerRed.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8ECEB02A0BD3EF00409452 /* BeerRed.swift */; };
+		AF8ECEB32A0BD44000409452 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8ECEB22A0BD44000409452 /* Beer.swift */; };
+		AF8ECEB52A0BD6F900409452 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8ECEB42A0BD6F900409452 /* APIHandler.swift */; };
+		AF8ECEB72A0BD82200409452 /* BeerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8ECEB62A0BD82200409452 /* BeerListView.swift */; };
+		AF8ECEBA2A0BD9F700409452 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = AF8ECEB92A0BD9F700409452 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AF6F9DFB2A07B164003CF36A /* SolvroAppButInTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SolvroAppButInTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF6F9DFE2A07B164003CF36A /* SolvroAppButInTCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolvroAppButInTCAApp.swift; sourceTree = "<group>"; };
-		AF6F9E002A07B164003CF36A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AF6F9E022A07B165003CF36A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF6F9E052A07B165003CF36A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AF8ECEB02A0BD3EF00409452 /* BeerRed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerRed.swift; sourceTree = "<group>"; };
+		AF8ECEB22A0BD44000409452 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		AF8ECEB42A0BD6F900409452 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		AF8ECEB62A0BD82200409452 /* BeerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF8ECEBA2A0BD9F700409452 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,9 +60,12 @@
 			isa = PBXGroup;
 			children = (
 				AF6F9DFE2A07B164003CF36A /* SolvroAppButInTCAApp.swift */,
-				AF6F9E002A07B164003CF36A /* ContentView.swift */,
 				AF6F9E022A07B165003CF36A /* Assets.xcassets */,
 				AF6F9E042A07B165003CF36A /* Preview Content */,
+				AF8ECEB02A0BD3EF00409452 /* BeerRed.swift */,
+				AF8ECEB22A0BD44000409452 /* Beer.swift */,
+				AF8ECEB42A0BD6F900409452 /* APIHandler.swift */,
+				AF8ECEB62A0BD82200409452 /* BeerListView.swift */,
 			);
 			path = SolvroAppButInTCA;
 			sourceTree = "<group>";
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = SolvroAppButInTCA;
+			packageProductDependencies = (
+				AF8ECEB92A0BD9F700409452 /* ComposableArchitecture */,
+			);
 			productName = SolvroAppButInTCA;
 			productReference = AF6F9DFB2A07B164003CF36A /* SolvroAppButInTCA.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = AF6F9DF22A07B164003CF36A;
+			packageReferences = (
+				AF8ECEB82A0BD9F700409452 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = AF6F9DFC2A07B164003CF36A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF6F9E012A07B164003CF36A /* ContentView.swift in Sources */,
+				AF8ECEB72A0BD82200409452 /* BeerListView.swift in Sources */,
+				AF8ECEB12A0BD3EF00409452 /* BeerRed.swift in Sources */,
+				AF8ECEB52A0BD6F900409452 /* APIHandler.swift in Sources */,
 				AF6F9DFF2A07B164003CF36A /* SolvroAppButInTCAApp.swift in Sources */,
+				AF8ECEB32A0BD44000409452 /* Beer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +359,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF8ECEB82A0BD9F700409452 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.52.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF8ECEB92A0BD9F700409452 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF8ECEB82A0BD9F700409452 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF6F9DF32A07B164003CF36A /* Project object */;
 }

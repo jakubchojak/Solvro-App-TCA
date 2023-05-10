@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import ComposableArchitecture
 
 @main
 struct SolvroAppButInTCAApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BeerListView(store: Store(initialState: BeerRed.State(), reducer: BeerRed()))
         }
     }
 }
