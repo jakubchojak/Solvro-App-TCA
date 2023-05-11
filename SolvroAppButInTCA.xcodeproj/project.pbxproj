@@ -15,6 +15,8 @@
 		AF8ECEB52A0BD6F900409452 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8ECEB42A0BD6F900409452 /* APIHandler.swift */; };
 		AF8ECEB72A0BD82200409452 /* BeerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8ECEB62A0BD82200409452 /* BeerListView.swift */; };
 		AF8ECEBA2A0BD9F700409452 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = AF8ECEB92A0BD9F700409452 /* ComposableArchitecture */; };
+		AF8ECEBC2A0CEBFF00409452 /* BeerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8ECEBB2A0CEBFF00409452 /* BeerDetail.swift */; };
+		AF8ECEBE2A0CEC3F00409452 /* BeerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8ECEBD2A0CEC3F00409452 /* BeerDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		AF8ECEB22A0BD44000409452 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		AF8ECEB42A0BD6F900409452 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		AF8ECEB62A0BD82200409452 /* BeerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListView.swift; sourceTree = "<group>"; };
+		AF8ECEBB2A0CEBFF00409452 /* BeerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetail.swift; sourceTree = "<group>"; };
+		AF8ECEBD2A0CEC3F00409452 /* BeerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				AF8ECEB22A0BD44000409452 /* Beer.swift */,
 				AF8ECEB42A0BD6F900409452 /* APIHandler.swift */,
 				AF8ECEB62A0BD82200409452 /* BeerListView.swift */,
+				AF8ECEBB2A0CEBFF00409452 /* BeerDetail.swift */,
+				AF8ECEBD2A0CEC3F00409452 /* BeerDetailView.swift */,
 			);
 			path = SolvroAppButInTCA;
 			sourceTree = "<group>";
@@ -156,8 +162,10 @@
 			files = (
 				AF8ECEB72A0BD82200409452 /* BeerListView.swift in Sources */,
 				AF8ECEB12A0BD3EF00409452 /* BeerRed.swift in Sources */,
+				AF8ECEBC2A0CEBFF00409452 /* BeerDetail.swift in Sources */,
 				AF8ECEB52A0BD6F900409452 /* APIHandler.swift in Sources */,
 				AF6F9DFF2A07B164003CF36A /* SolvroAppButInTCAApp.swift in Sources */,
+				AF8ECEBE2A0CEC3F00409452 /* BeerDetailView.swift in Sources */,
 				AF8ECEB32A0BD44000409452 /* Beer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

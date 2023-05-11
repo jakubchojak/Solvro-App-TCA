@@ -13,18 +13,22 @@ struct BeerListView: View {
     
     var body: some View {
         WithViewStore(self.store, observe:{ $0 }) { viewStore in
-            VStack {
-                List {
-                    ForEach(viewStore.state.beers, id:\.self) { beer in
-                        Text(beer.name)
+            NavigationView {
+                VStack {
+                    List {
+                        ForEach(viewStore.state.beers, id:\.self) { beer in
+                            NavigationLink(destination: BeerDetailView(store: Store(initialState: BeerDetail.State(beer: beer), reducer: BeerDetail()))) {
+                                Text(beer.name)
+                            }
+                        }
                     }
                 }
+                .onAppear(
+                    perform: {
+                        viewStore.send(.initializer)
+                    }
+                )
             }
-            .onAppear(
-                perform: {
-                    viewStore.send(.initializer)
-                }
-            )
         }
     }
 }
