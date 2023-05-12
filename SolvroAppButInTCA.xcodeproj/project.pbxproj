@@ -17,6 +17,8 @@
 		AF8ECEBA2A0BD9F700409452 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = AF8ECEB92A0BD9F700409452 /* ComposableArchitecture */; };
 		AF8ECEBC2A0CEBFF00409452 /* BeerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8ECEBB2A0CEBFF00409452 /* BeerDetail.swift */; };
 		AF8ECEBE2A0CEC3F00409452 /* BeerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8ECEBD2A0CEC3F00409452 /* BeerDetailView.swift */; };
+		AF8ECEC02A0E2AE200409452 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8ECEBF2A0E2AE200409452 /* Main.swift */; };
+		AF8ECEC22A0E2B0F00409452 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8ECEC12A0E2B0F00409452 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		AF8ECEB62A0BD82200409452 /* BeerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListView.swift; sourceTree = "<group>"; };
 		AF8ECEBB2A0CEBFF00409452 /* BeerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetail.swift; sourceTree = "<group>"; };
 		AF8ECEBD2A0CEC3F00409452 /* BeerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailView.swift; sourceTree = "<group>"; };
+		AF8ECEBF2A0E2AE200409452 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		AF8ECEC12A0E2B0F00409452 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				AF8ECEB62A0BD82200409452 /* BeerListView.swift */,
 				AF8ECEBB2A0CEBFF00409452 /* BeerDetail.swift */,
 				AF8ECEBD2A0CEC3F00409452 /* BeerDetailView.swift */,
+				AF8ECEBF2A0E2AE200409452 /* Main.swift */,
+				AF8ECEC12A0E2B0F00409452 /* MainView.swift */,
 			);
 			path = SolvroAppButInTCA;
 			sourceTree = "<group>";
@@ -161,7 +167,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF8ECEB72A0BD82200409452 /* BeerListView.swift in Sources */,
+				AF8ECEC22A0E2B0F00409452 /* MainView.swift in Sources */,
 				AF8ECEB12A0BD3EF00409452 /* BeerRed.swift in Sources */,
+				AF8ECEC02A0E2AE200409452 /* Main.swift in Sources */,
 				AF8ECEBC2A0CEBFF00409452 /* BeerDetail.swift in Sources */,
 				AF8ECEB52A0BD6F900409452 /* APIHandler.swift in Sources */,
 				AF6F9DFF2A07B164003CF36A /* SolvroAppButInTCAApp.swift in Sources */,

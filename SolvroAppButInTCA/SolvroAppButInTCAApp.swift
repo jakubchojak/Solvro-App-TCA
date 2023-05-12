@@ -12,7 +12,7 @@ import ComposableArchitecture
 struct SolvroAppButInTCAApp: App {
     var body: some Scene {
         WindowGroup {
-            BeerListView(store: Store(initialState: BeerRed.State(), reducer: BeerRed()))
+            MainView(store: Store(initialState: Main.State(), reducer: Main()))
         }
     }
 }
